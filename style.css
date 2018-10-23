@@ -1,0 +1,71 @@
+
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.digitContainer {
+  width:350px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 5px solid rgb(80, 80, 80);
+  background-color: rgb(107, 107, 107);
+}
+
+.digit {
+  width:100px;
+  height:100px;
+  margin:5px;
+  background-color:#888;
+  border: 3px solid #444;
+  text-align: center;
+  -moz-user-select: none;
+}
+
+.digit:hover {
+  background-color:rgb(122, 122, 122);
+  cursor: pointer;
+}
+
+.digit:active {
+  background-color:rgb(88, 88, 88);
+  color: yellowgreen;
+  text-shadow: 0 0 8px yellowgreen;
+  cursor: pointer;
+}
+
+.outer {
+  position: absolute;
+  margin: auto;
+  top:0;
+  bottom: 0;
+  right:0;
+  left:0;
+  width:385px;
+  height:550px; 
+  background-image: linear-gradient(-90deg, grey, rgb(167, 167, 167));
+  background-repeat: repeat;
+  overflow: visible;
+}
+
+.inner {
+  margin:5px auto;
+  width:365px;;
+  height:600px;
+  overflow: hidden;
+}
+
+input {
+  width:350px;
+  font-size:34px;
+  margin-bottom:5px;
+  border: 5px solid yellowgreen;
+  color: aqua;
+  background-color: rgb(1, 20, 83);
+  font-family: monospace;
+  padding: 3px;
+}
+

@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="calcApp">
+  <head>
+      <meta charset="UTF-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="outer" ng-controller="calcCtrl">
+      <div class="inner">
+        <div>
+          <input ng-model="code">
+        </div>
+        <div  ng-class="digitContainerStyle">
+          <div ng-repeat="x in digit">
+            <div ng-class="digitStyle" ng-click="digitPush(x)">
+              <span style="color: white; margin:0 auto; line-height: 100px; font-size:50px;">{{x}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
